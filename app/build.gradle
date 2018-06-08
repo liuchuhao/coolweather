@@ -8,7 +8,16 @@ android {
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
+        flavorDimensions "versionCode"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    productFlavors{
+        ruochu{
+            applicationId "cn.cq.ruochu"
+        }
+        qihoo{
+            applicationId "com.coolweather.android.qihoo"
+        }
     }
     buildTypes {
         release {
